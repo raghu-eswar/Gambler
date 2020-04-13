@@ -55,6 +55,12 @@ do
     fi
 done
 
+if (( $winingDays > $losingDays )); then
+    echo "i will continue";
+else
+    echo "i will stop";
+fi
+
 echo ${everyDayGameStatus[@]};
 echo $daysWon;
 echo $daysLost;
